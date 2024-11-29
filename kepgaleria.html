@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Képgaléria - A One Piece világa</title>
+    <link rel="stylesheet" href="css/galeria.css" media="screen">
+    <link href="css/print.css" rel="stylesheet" media="print">
+</head>
+
+<body>
+
+<header>
+    <h1 id="oldalteteje">Képgaléria</h1>
+    <br>
+    <nav id="fomenu" class="fomenu">
+        <h2 class="rejtett">Főmenü</h2>
+        <ul>
+            <li><a href="index.html" title="Ugrás a Kezdőlapra">Kezdőlap</a></li>
+            <li><a href="karakterek.html" title="Ugrás a kedvenc karaktereim menüpontra.">Kedvenc karaktereim</a></li>
+            <li><a href="gyumolcsok.html" title="Ugrás a démongyümölcsökről szóló menüpontra.">Démongyümölcsök</a></li>
+            <li><a href="urlap.html" title="Ugrás a menüpontra, ahol beküldheted a saját kedvenc démongyümölcsöd.">Űrlap</a></li>
+            <li><b>Képgaléria</b></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <button id="contrast-toggle" class="contrast-btn">Kontrasztos mód</button>
+
+    <br>
+    
+    <div id="gallery-container">
+        <img id="gallery-image" src="media/galeria1.webp" alt="Kép 1" class="gallery-item">
+        <div id="controls">
+            <button id="prev-btn" class="nav-btn">Előző</button>
+            <button id="next-btn" class="nav-btn">Következő</button>
+        </div>
+    </div>
+    </main>
+
+    <script src="js/galeria.js"></script>
+    <script src="js/contrast.js"></script>
+    <footer>
+        <p>Készítette: Molnár Nikolett <a href="mailto:mniki014@gmail.com">mniki014@gmail.com</a></p><br>
+        <nav>
+        <a href="#oldalteteje" accesskey="1">Vissza a tetejére</a>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+ <html lang="hu">
+	<head>
+        <meta charset="utf-8">
+		<title>Űrlap - A One Piece világa</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" media="screen">
+        <link href="css/print.css" rel="stylesheet" media="print">
+	</head>
+    <body>
+        <header>
+            <nav id="ugras">
+                <a class ="rejtett" href="#tartalom">Ugrás a tartalomra</a>
+            </nav>
+
+            <h1 id="oldalteteje">Űrlap</h1>
+
+            <nav id="fomenu" class="fomenu">
+                <h2 class="rejtett">Főmenü</h2>
+                <ul>
+                    <li><a href="index.html" title="Ugrás a Kezdőlapra">Kezdőlap</a></li>
+                    <li><a href="karakterek.html" title="Ugrás a kedvenc karaktereim menüpontra.">Kedvenc karaktereim</a></li>
+                    <li><a href="gyumolcsok.html" title="Ugrás a démongyümölcsökről szóló menüpontra.">Démongyümölcsök</a></li>
+                    <li><b>Űrlap</b></li>
+                    <li><a href="kepgaleria.html" title="Ugrás a képgalériára.">Képgaléria</a></li>
+                </ul>
+            </nav>
+        </header>	
+
+        <main id="tartalom">
+            <button id="contrast-toggle" class="contrast-btn">Kontrasztos mód</button>
+            <h2>Kedvenc démongyömölcs beküldése</h2>
+            <p>Küldd be a kedvenc démongyümölcsöd!</p>
+            <form action="mailto:mniki014@gmail.com" method="post" enctype="text/plain">
+                <fieldset>
+                    <legend>A démongyümölcs adatai</legend>
+                    <label for="cim1"><strong>Neve:</strong></label><br>
+                    <input type="text" name="gyumolcsnev" id="cim1" size="70" maxlength="30"><br>
+                    <br>
+                    <label for="cim2"><strong>Használója:</strong></label><br>
+                    <input type="text" name="hasznalo" id="cim2" size="70" maxlength="30"><br>
+                    <br>
+                </fieldset>
+                       
+                <fieldset>
+                    <legend><b>Fajtája</b></legend>
+                          <input type="radio" name="fajta" id="v1" value="1">
+                          <label for="v1"><span lang="en">Paramecia</span></label>
+                          <input type="radio" name="fajta" id="v2" value="2">
+                          <label for="v2"><span lang="en">Logia</span></label>
+                          <input type="radio" name="fajta" id="v3" value="3">
+                          <label for="v3"><span lang="en">Zoan</span></label><br>
+                          <br>
+
+                    <label for="gyumolcsleiras"><strong>Leírása</strong></label><br>
+                    <textarea cols="70" rows="15" name="gyumolcsleiras" id="gyumolcsleiras" placeholder="Ide írd a démongyümölcs leírását" maxlength="200"></textarea>
+
+                </fieldset>
+
+                <fieldset>
+                    <input type="checkbox" name="megjelenes" id="megjelenes" value="igen">
+                    <label for="megjelenes">Szeretném, hogy a démongyümölcsöm megjelenjen a weblapon</label>    
+                </fieldset>
+
+                <fieldset>
+                    <input type="submit" value="Elküldés"><br>
+                    <input type="reset" value="Törlés">
+                </fieldset>
+                
+            </form>
+            <script src="js/contrast.js"></script>
+        </main>
+        <footer>
+            <p>Készítette: Molnár Nikolett <a href="mailto:mniki014@gmail.com">mniki014@gmail.com</a></p><br>
+            <nav>
+            <a href="#oldalteteje" accesskey="1">Vissza a tetejére</a>
+            </nav>
+        </footer>
+    </body>
+</html>
